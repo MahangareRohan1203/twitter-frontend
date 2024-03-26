@@ -41,7 +41,7 @@ const fetchSearchInput = async (input) => {
       redirect: "follow",
     };
     
-    let response = await fetch(`${BASE_URL}?name=${input}`, requestOptions);
+    let response = await fetch(`${DEPLOYED_BASE_URL}?name=${input}`, requestOptions);
     // let response = await fetch(BASE_URL);
     console.log("called-2", response);
     if (response.status !== 200) {

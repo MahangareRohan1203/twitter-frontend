@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BASE_URL } from "../data/constants";
+import { BASE_URL, DEPLOYED_BASE_URL } from "../data/constants";
 import { tweetData } from "../data/tweets";
 
 export const useTweets = (userId, setIsLoading, setError) => {
@@ -44,7 +44,7 @@ const fetchTweets = async (input) => {
     };
 
     let response = await fetch(
-      `${BASE_URL}/${input}/tweets`,
+      `${DEPLOYED_BASE_URL}/${input}/tweets`,
       requestOptions
     );
 
