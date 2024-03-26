@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BASE_URL, DEPLOYED_BASE_URL } from "../data/constants";
+import { DEPLOYED_BASE_URL } from "../data/constants";
 import { userData } from "../data/usersData";
 
 export const useSearchUsers = (input, setIsLoading, setError) => {
